@@ -1,0 +1,168 @@
+:root {
+    --color1: #e4ffd4; /* Verde claro */
+    --color2: #ebe7a7; /* Amarelo pálido */
+    --color3: #edc68e; /* Amarelo dourado */
+    --color4: #a49e7e; /* Marrom oliva */
+    --color5: #6e8f85; /* Verde musgo */
+    --color6: #dbd9b7; /* Bege suave */
+    --color7: #c1c9c8; /* Cinza claro */
+    --color8: #a5b5ab; /* Verde cinza claro */
+    --color9: #949a8e; /* Verde oliva claro */
+    --color10: #615566; /* Roxo escuro */
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color7); /* Cinza claro */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--color5); /* Verde musgo */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.instruction {
+    margin: 15px 0;
+}
+
+.instruction a {
+    color: var(--color2); /* Amarelo pálido */
+    text-decoration: none;
+}
+
+.instruction a:hover {
+    text-decoration: underline;
+}
+
+.navigation-buttons {
+    margin: 20px 0;
+}
+
+.button {
+    background-color: var(--color3); /* Amarelo dourado */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: var(--color4); /* Marrom oliva */
+}
+
+main {
+    text-align: center;
+}
+
+input, button {
+    width: 300px;
+    height: 50px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--color3); /* Amarelo dourado */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color4); /* Marrom oliva */
+}
+
+#placa {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.placa {
+    background-color: var(--color6); /* Bege suave */
+    border: 2px solid var(--color4); /* Marrom oliva */
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    margin: 10px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: var(--color10); /* Roxo escuro para rótulos */
+}
+p span {
+    font-weight: bold;
+}
+
+p span.cor{
+ color: var(--color9);
+ font-weight: bold;
+}
+
+/* Tamanho e cor do restante do texto */
+.placa p {
+    font-size: 18px; /* Ajuste o tamanho do texto conforme necessário */
+    color: var(--color10); /* Roxo escuro para o texto padrão */
+}
+
+
+p span.gravidade {
+    font-weight: bold;
+}
+
+/* Cores específicas para cada tipo de gravidade */
+.leve .gravidade {
+    color: #4a90e2; /* Azul claro */
+}
+
+.media .gravidade {
+    color: #f89d42; /* Laranja claro */
+}
+
+.grave .gravidade {
+    color: #ff272e; /* Vermelho */
+}
+
+.gravissima .gravidade {
+    color: #7f3f5c; /* Bordô */
+}

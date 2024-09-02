@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Placa</title>
+    <link rel="stylesheet" href="style/pesquisaPlaca.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pesquisa de Placa</h1>
+            <p class="instruction">Caso não possua o número da placa, vá para a <a href="Placas.html">Lista de Placas de Carro</a> e veja qual você deseja consultar.</p>
+            <div class="navigation-buttons">
+                <a href="index.html" class="button">Voltar ao Início</a>
+                <a href="Placas.html" class="button">Lista de Placas</a>
+            </div>
+        </header>
+        <main>
+            <label for="pesq">Placa:</label>
+            <input type="text" id="pesq">
+            <button id="botao">Pesquisar</button>
+            <div id="placa"></div>
+        </main>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/detran.js"></script>
+    <script src="js/pesquisaPlaca.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Placas</title>
+    <link rel="stylesheet" href="style/placas.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-button">Voltar ao Início</a>
+        <h1>Consulta de Placas de Veículos</h1>
+        <form id="filter-form">
+            <label for="estado">Estado:</label>
+            <select id="estado">
+                <option value="">Todos</option>
+                <!-- Opções serão preenchidas dinamicamente -->
+            </select>
+            <label for="cidade">Cidade:</label>
+            <select id="cidade">
+                <option value="">Todas</option>
+                <!-- Opções serão preenchidas dinamicamente -->
+            </select>
+            <button type="button" id="filter-btn">Filtrar</button>
+        </form>
+    </header>
+    <main id="lista">
+        <!-- Placas serão exibidas aqui -->
+    </main>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/detran.js"></script>
+    <script src="js/Placas.js"></script>
+</body>
+</html>

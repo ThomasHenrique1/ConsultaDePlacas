@@ -1,0 +1,82 @@
+/* Estilo geral para o body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Cor de fundo suave */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Preenche a altura total da tela */
+}
+
+/* Contêiner principal */
+.container {
+    max-width: 600px; /* Largura máxima ajustada */
+    width: 100%; /* Largura total da tela */
+    padding: 20px;
+    background-color: #ffffff; /* Cor de fundo branca */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo do título */
+h1 {
+    color: #615566; /* Cor do texto mais escura */
+    margin-bottom: 20px;
+}
+
+/* Contêiner dos resultados */
+.result-container {
+    margin-bottom: 20px;
+}
+
+/* Estilo para cada resultado */
+.result {
+    font-size: 1.2em;
+    color: #6e8f85; /* Cor do texto mais visível */
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #dbd9b7; /* Cor de fundo mais destacada */
+    border-radius: 5px;
+    text-align: left; /* Alinhamento do texto à esquerda */
+}
+
+/* Estilo para o botão de sortear */
+button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #615566; /* Cor de fundo dos botões */
+    color: #ffffff; /* Cor do texto dos botões */
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo do botão ao passar o mouse */
+button:hover {
+    background-color: #4a4a4a; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+/* Estilo para o botão de voltar ao início */
+.back-button {
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a5b5ab; /* Cor de fundo do botão de voltar */
+    color: #ffffff; /* Cor do texto */
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo do botão de voltar ao passar o mouse */
+.back-button:hover {
+    background-color: #7a8f8a; /* Cor de fundo mais escura ao passar o mouse */
+}

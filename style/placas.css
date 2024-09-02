@@ -1,0 +1,111 @@
+/* Reset básico para garantir uma base consistente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Cor de fundo leve para o corpo */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o header */
+header {
+    background-color: #6e8f85; /* Cor de fundo do header, adaptada para combinar com o design anterior */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Necessário para posicionar o botão de volta */
+}
+
+header .back-button {
+    display: inline-block;
+    background-color: #a5b5ab; /* Cor do botão de voltar, adaptada para combinar */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px; /* Ajuste a posição conforme necessário */
+    right: 20px;
+    font-size: 16px;
+}
+
+header .back-button:hover {
+    background-color: #949a8e; /* Cor do botão de voltar no hover */
+}
+
+/* Estilos para o formulário */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinha verticalmente os itens do formulário */
+    gap: 20px;
+    margin: 20px;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte em telas menores */
+}
+
+label {
+    font-size: 18px; /* Aumenta o tamanho da fonte das labels para melhor visibilidade */
+    color: #333; /* Cor do texto das labels */
+    width: 120px; /* Largura fixa para as labels */
+    text-align: right; /* Alinha o texto das labels à direita */
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 200px; /* Largura dos campos de seleção */
+}
+
+button {
+    background-color: #4a90e2; /* Cor do botão ajustada para combinar com o header */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #007bff; /* Cor do botão no hover */
+}
+
+/* Estilos para a lista de placas */
+#lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilo para cada placa */
+.lista {
+    border: 2px solid #6e8f85; /* Cor da borda das placas ajustada para combinar com o header */
+    border-radius: 10px;
+    width: 300px;
+    background-color: #fff; /* Fundo branco para as placas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve para destaque */
+    padding: 15px;
+    text-align: center;
+}
+
+.lista h3 {
+    background-color: #e4e4e4; /* Cor de fundo para o cabeçalho das placas */
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.lista h1 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}

@@ -1,0 +1,135 @@
+/* styles.css */
+
+/* Cores principais */
+:root {
+    --color1: #e4ffd4; /* Verde claro */
+    --color2: #ebe7a7; /* Amarelo pálido */
+    --color3: #edc68e; /* Amarelo dourado */
+    --color4: #a49e7e; /* Marrom oliva */
+    --color5: #6e8f85; /* Verde musgo */
+    --color6: #dbd9b7; /* Bege suave */
+    --color7: #c1c9c8; /* Cinza claro */
+    --color8: #a5b5ab; /* Verde cinza claro */
+    --color9: #949a8e; /* Verde oliva claro */
+    --color10: #615566; /* Roxo escuro */
+}
+
+/* Estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, var(--color1), var(--color6)); /* Gradiente de verde claro para bege suave */
+    color: var(--color10); /* Roxo escuro */
+    overflow-x: hidden; /* Evita que a página role para o lado */
+    min-height: 100vh; /* Garante que o corpo ocupe pelo menos 100% da altura da tela */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: var(--color5); /* Verde musgo */
+    color: var(--color1); /* Verde claro */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid var(--color3); /* Amarelo dourado */
+}
+
+/* Estilo do menu de navegação */
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens envolvam para a próxima linha */
+    justify-content: center; /* Centraliza os itens */
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: var(--color1); /* Verde claro */
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--color4); /* Marrom oliva */
+    padding: 15px 25px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    background-color: var(--color3); /* Amarelo dourado */
+    color: var(--color5); /* Verde musgo */
+}
+
+/* Estilo do conteúdo principal */
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Garante que o conteúdo seja centralizado verticalmente */
+    min-height: 70vh; /* Garante altura mínima para o conteúdo principal */
+}
+
+section {
+    background: var(--color7); /* Cinza claro */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section h2 {
+    color: var(--color10); /* Roxo escuro */
+    margin-top: 0;
+}
+
+section p {
+    color: var(--color9); /* Verde oliva claro */
+    line-height: 1.6;
+    font-size: 1.2em;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: var(--color5); /* Verde musgo */
+    color: var(--color1); /* Verde claro */
+    padding: 10px;
+    text-align: center;
+    border-top: 5px solid var(--color3); /* Amarelo dourado */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    header, footer {
+        padding: 10px;
+    }
+}
